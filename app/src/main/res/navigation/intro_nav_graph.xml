@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/intro_nav_graph"
+    app:startDestination="@id/introStartFragment">
+    <fragment
+        android:id="@+id/introStartFragment"
+        android:name="com.unimib.workingspot.ui.intro.fragments.IntroStartFragment"
+        android:label="IntroStartFragment" >
+        <action
+            android:id="@+id/action_introStartFragment_to_requestGeolocalizationPermissionsFragment"
+            app:destination="@id/requestGeolocalizationPermissionsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestGeolocalizationPermissionsFragment"
+        android:name="com.unimib.workingspot.ui.intro.fragments.RequestGeolocalizationPermissionsFragment"
+        android:label="fragment_request_geolocalization_permissions"
+        tools:layout="@layout/fragment_request_geolocalization_permissions" />
+</navigation>

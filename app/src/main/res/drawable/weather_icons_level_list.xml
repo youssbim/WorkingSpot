@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:minLevel="0" android:maxLevel="1" android:drawable="@drawable/outline_signal_cellular_connected_no_internet_0_bar_24"/>
+    <item android:minLevel="1000" android:maxLevel="1000" android:drawable="@drawable/clear_day"/>
+    <item android:maxLevel = "1001" android:drawable="@drawable/clear_night"/>
+    <item android:maxLevel="1003" android:drawable="@drawable/partly_cloudy_day"/>
+    <item android:maxLevel="1004" android:drawable="@drawable/partly_cloudy_night"/>
+    <!--Covers both "cloudy" and "overcast-->
+    <item android:minLevel="1006" android:maxLevel="1009" android:drawable="@drawable/cloudy"/>
+    <item android:minLevel="1030" android:maxLevel="1031" android:drawable="@drawable/haze_fog_dust_smoke"/>
+    <item android:minLevel="1006" android:maxLevel="1031" android:drawable="@drawable/cloudy"/>
+    <item android:maxLevel="1063" android:drawable="@drawable/scattered_showers_day"/>
+    <item android:maxLevel="1064" android:drawable="@drawable/scattered_showers_night"/>
+    <item android:maxLevel="1066" android:drawable="@drawable/scattered_snow_showers_day"/>
+    <item android:maxLevel="1067" android:drawable="@drawable/scattered_snow_showers_night"/>
+    <item android:minLevel="1069" android:maxLevel="1070" android:drawable="@drawable/mixed_rain_hail_sleet"/>
+    <item android:minLevel="1072" android:maxLevel="1073" android:drawable="@drawable/mixed_rain_snow"/>
+    <item android:maxLevel="1087" android:drawable="@drawable/isolated_scattered_thunderstorms_day"/>
+    <item android:maxLevel="1088" android:drawable="@drawable/isolated_scattered_thunderstorms_night"/>
+    <item android:minLevel="1114" android:maxLevel="1115" android:drawable="@drawable/blowing_snow"/>
+    <item android:minLevel="1117" android:maxLevel="1118" android:drawable="@drawable/blizzard"/>
+    <!--Covers both "fog" and "freezing fog"-->
+    <item android:minLevel="1135" android:maxLevel="1148" android:drawable="@drawable/haze_fog_dust_smoke"/>
+    <item android:maxLevel="1150" android:drawable="@drawable/scattered_showers_day"/>
+    <item android:maxLevel="1151" android:drawable="@drawable/scattered_showers_night"/>
+    <item android:minLevel="1153" android:maxLevel="1154" android:drawable="@drawable/drizzle"/>
+    <item android:maxLevel="1168" android:drawable="@drawable/scattered_snow_showers_day"/>
+    <item android:maxLevel="1169" android:drawable="@drawable/scattered_snow_showers_night"/>
+    <item android:minLevel="1171" android:maxLevel="1172" android:drawable="@drawable/mixed_rain_snow"/>
+    <item android:minLevel="1180" android:maxLevel="1181" android:drawable="@drawable/drizzle"/>
+    <!--Covers all possible rains status code-->
+    <item android:minLevel="1183" android:maxLevel="1190" android:drawable="@drawable/showers_rain"/>
+    <item android:minLevel="1192" android:maxLevel="1196" android:drawable="@drawable/heavy_rain"/>
+    <!--Covers both "freezing rain" and "heavy freezing rain"-->
+    <item android:minLevel="1198" android:maxLevel="1202" android:drawable="@drawable/mixed_rain_snow"/>
+    <item android:minLevel="1204" android:maxLevel="1208" android:drawable="@drawable/sleet_hail"/>
+    <item android:maxLevel="1210" android:drawable="@drawable/scattered_snow_showers_day"/>
+    <item android:maxLevel="1211" android:drawable="@drawable/scattered_snow_showers_night"/>
+    <item android:minLevel="1213" android:maxLevel="1220" android:drawable="@drawable/showers_snow"/>
+    <item android:minLevel="1222" android:maxLevel="1226" android:drawable="@drawable/heavy_snow"/>
+    <item android:minLevel="1237" android:maxLevel="1238" android:drawable="@drawable/icy"/>
+    <item android:minLevel="1240" android:maxLevel="1241" android:drawable="@drawable/showers_rain"/>
+    <item android:minLevel="1243" android:maxLevel="1247" android:drawable="@drawable/heavy_rain"/>
+    <item android:minLevel="1249" android:maxLevel="1253" android:drawable="@drawable/sleet_hail"/>
+    <item android:minLevel="1255" android:maxLevel="1257" android:drawable="@drawable/showers_snow"/>
+    <item android:minLevel="1258" android:maxLevel="1259" android:drawable="@drawable/heavy_snow"/>
+    <item android:minLevel="1261" android:maxLevel="1265" android:drawable="@drawable/icy"/>
+    <item android:maxLevel="1273" android:drawable="@drawable/isolated_scattered_thunderstorms_day"/>
+    <item android:maxLevel="1274" android:drawable="@drawable/isolated_scattered_thunderstorms_night"/>
+    <item android:minLevel="1276" android:maxLevel="1277" android:drawable="@drawable/isolated_thunderstorms"/>
+    <item android:minLevel="1279" android:maxLevel="1283" android:drawable="@drawable/strong_thunderstorms"/>
+</level-list>

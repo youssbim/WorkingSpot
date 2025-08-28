@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.unimib.workingspot.ui.main.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.unimib.workingspot.ui.main.fragments.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.unimib.workingspot.ui.main.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_loggedProfileFragment"
+            app:destination="@id/loggedProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_guestProfileFragment"
+            app:destination="@id/guestProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guestProfileFragment"
+        android:name="com.unimib.workingspot.ui.main.fragments.GuestProfileFragment"
+        android:label="fragment_guest_profile"
+        tools:layout="@layout/fragment_guest_profile" >
+    </fragment>
+    <fragment
+        android:id="@+id/loggedProfileFragment"
+        android:name="com.unimib.workingspot.ui.main.fragments.LoggedProfileFragment"
+        android:label="fragment_logged_profile"
+        tools:layout="@layout/fragment_logged_profile" >
+    </fragment>
+    <fragment
+        android:id="@+id/savedWorkPlacesFragment"
+        android:name="com.unimib.workingspot.ui.main.fragments.SavedWorkPlaceFragment"
+        android:label="SavedWorkPlacesFragment" />
+</navigation>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.fragments.LoggedProfileFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_picture_size"
+        android:background="@color/md_theme_primary">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profile_picture"
+            android:layout_width="@dimen/profile_picture_size"
+            android:layout_height="@dimen/profile_picture_size"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@color/transparent"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="@dimen/profile_picture_size"
+            app:iconTint="@null"
+            app:iconTintMode="src_atop" />
+
+        <LinearLayout
+            android:id="@+id/username_text_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username_text_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:hint="@string/username"
+                app:hintTextAppearance="@style/UsernameTextAppearance">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColorHint="@color/md_theme_onPrimaryContainer"
+                    android:cursorVisible="false">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit_username_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:icon="@drawable/pencil_outline"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="24dp"
+                />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/divider"/>
+
+                <LinearLayout
+                    android:id="@+id/account_information_manager_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@drawable/rounded_view"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:gravity="center"
+                        android:textSize="@dimen/title_size"
+                        android:textColor="@color/md_theme_onPrimaryContainer" />
+                    <LinearLayout
+                        android:id="@+id/information_change_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical">
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/change_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/changeEmail"
+                            android:textSize="@dimen/regular_text_size"
+                            android:gravity="start|center"
+                            app:icon="@drawable/outline_email_24" />
+                        <LinearLayout
+                            android:id="@+id/email_text_linear_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/email_text_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/email"
+                                app:hintTextAppearance="@style/UsernameTextAppearance">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/email_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="textEmailAddress"
+                                    android:textColorHint="@color/md_theme_onPrimaryContainer"
+                                    android:cursorVisible="true">
+                                </com.google.android.material.textfield.TextInputEditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/submit_email_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                                android:text="@string/submit"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/undo_email_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:backgroundTint="@color/md_theme_error"
+                                android:text="@string/undo"
+                                />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/change_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:text="@string/changePassword"
+                            android:textSize="@dimen/regular_text_size"
+                            app:icon="@drawable/outline_password_24"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/divider"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/disconnect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:background="@color/transparent"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/disconnect"
+                        android:textColor="@color/md_theme_errorContainer_mediumContrast" />
+                    <Space
+                        android:id="@+id/spacer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_vertical_margin"
+                        android:background="@color/transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

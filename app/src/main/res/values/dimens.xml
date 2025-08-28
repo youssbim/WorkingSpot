@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name = "guideline_constraint_distance">16dp</dimen>
+    <dimen name = "rounded_background_padding">5dp</dimen>
+    <dimen name="material_switch_max_width">320dp</dimen>
+    <dimen name="title_size">16sp</dimen>
+    <dimen name="regular_text_size">13sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="box_stroke_width_default">3dp</dimen>
+    <dimen name="box_stroke_width_hidden">0dp</dimen>
+    <dimen name="automatic_login_logo_size">266dp</dimen>
+    <dimen name="profile_picture_size">100dp</dimen>
+    <dimen name="offline_error_padding">8dp</dimen>
+</resources>

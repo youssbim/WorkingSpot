@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/automaticLoginFragment">
+
+    <fragment
+        android:id="@+id/registrationsFragment"
+        android:name="com.unimib.workingspot.ui.welcome.fragment.RegistrationFragment"
+        tools:layout="@layout/fragment_registration"
+        android:label="RegistrationFragment" >
+        <action
+            android:id="@+id/action_registrationsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.unimib.workingspot.ui.welcome.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationsFragment"
+            app:destination="@id/registrationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/automaticLoginFragment"
+        android:name="com.unimib.workingspot.ui.welcome.fragment.AutomaticLoginFragment"
+        android:label="AutomaticLoginFragment" >
+        <action
+            android:id="@+id/action_automaticLoginFragment_to_registrationsFragment"
+            app:destination="@id/registrationsFragment" />
+    </fragment>
+</navigation>
