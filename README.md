@@ -7,12 +7,16 @@ An app for finding Co-Working spot. Made for the course "Mobile Devices Programm
 
 > A community that helps you discover and share the best places to be productive, wherever you are.
 
+![WorkingSpot Presentation - Slide 1](Documentazione/image1.png)
+
 ### 👥 **Development Team**
 
 - **Youssef Bimezzagh** - 894506
 - **Andrea Consonni** - 900116  
 - **Samuele Carbone** - 899661
 - **Matteo Cervini** - 902225
+
+![WorkingSpot Presentation - Slide 2](Documentazione/image2.png)
 
 ### ✨ **Main Features**
 
@@ -22,6 +26,8 @@ An app for finding Co-Working spot. Made for the course "Mobile Devices Programm
 - ➕ **Add a New Spot** - Contribute to the community by reporting new ideal spaces for studying or working
 - 💜 **Add to Favorites** - Don't let a great spot be forgotten: save it to find it again whenever you want
 - 📍 **Immediate Navigation** - Tap a card to open the location on Google Maps and reach the spot with one tap
+
+![WorkingSpot Presentation - Slide 3](Documentazione/image3.png)
 
 ---
 
@@ -48,7 +54,7 @@ An app for finding Co-Working spot. Made for the course "Mobile Devices Programm
 
 ## 📄 **Complete Documentation**
 
-For detailed information about the implementation, the complete documentation is available in the project files.
+For detailed information about the implementation, consult the [Complete Documentation](Documentazione/Documentazione.pdf).
 
 ---
 
